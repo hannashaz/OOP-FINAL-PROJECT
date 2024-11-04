@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cookbook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cookbook.html">Cookbook</a>
+      <a href="groceries.html">Groceries List</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <div class="meal-result">
+          <h2 class="title">Your Cookbook</h2>
+          <div id="cookbookList"></div>
+        </div>
+      </div>
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class="meal-details-content">
+          <!-- Recipe details will be displayed here -->
+        </div>
+        <!-- Inside the meal-details-content div -->
+<div class="notes-section">
+    <h3>Your Notes:</h3>
+    <textarea id="meal-notes" rows="4" placeholder="Add your notes here..."></textarea>
+    <button id="save-note-btn" class="btn">Save Note</button>
+    <button id="delete-note-btn" class="btn">Delete Note</button>
+    <div id="notes-display"></div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="py-3 text-center">
+      <small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> by Hanna Shaz</small>
+    </div>
+  </footer>
+
+  <script src="cookbook.js"></script>
+</body>
+</html>

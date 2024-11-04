@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groceries List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cookbook.html">Cook Book</a>
+        <a href="groceries.html">Groceries List</a>
+      </nav>
+  </header>
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Your Grocery List</h2>
+  
+  <div class="container">
+    <div id="grocery-list" class="meal-wrapper"></div>
+    <button class="btn" onclick="clearGroceryList()">Clear Cart</button>
+  </div>
+  <footer>
+    <div class="py-3 text-center">
+      <small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> MealFinderDB by Hanna Shaz</small>
+    </div>
+  </footer>
+
+  <script src="groceries.js"></script> <!-- Link to groceries.js -->
+</body>
+</html>
